@@ -1,0 +1,71 @@
+.reservation-page {
+    .all-reserve-number {
+        margin-top: 32px;
+        padding: 18px;
+        border-radius: 8px;
+        box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .reservation-table {
+        margin-top: 48px;
+        overflow-x: hidden;
+        padding-bottom: 16px;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.2);
+
+        .therapists-col {
+            box-shadow: 4px 0 5px -2px rgba(0, 0, 0, 0.2);
+        }
+
+        .reservation-block {
+            position: absolute;
+            top: 0px;
+            display: flex;
+            height: 64px;
+            border-radius: 8px;
+            z-index: 5;
+            background-color: rgba(0, 0, 0, 0.15);
+            transition: box-shadow 0.15s;
+            box-shadow: 8px 4px 10px -2px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+
+            .inner {
+                position: relative;
+                height: 64px;
+                padding: 8px;
+                background-color: rgba(229, 177, 91, 0.8);
+                color: white;
+            }
+        }
+
+        .reservation-block:hover {
+            z-index: 6;
+            box-shadow: 16px 0px 10px -2px rgba(0, 0, 0, 0.2);
+        }
+
+        .hour-line {
+            border-right: 1px solid rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+
+            .inner {
+                position: absolute;
+                top: 4;
+                left: -16;
+                color: rgba(0, 0, 0, 0.5);
+                background-color: "white";
+                border-radius: 4;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .reservation-list {
+        margin-top: 48px;
+        padding: 16px;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.2);
+    }
+}

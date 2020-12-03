@@ -1,0 +1,62 @@
+$primary_color: rgb(229, 177, 91)
+$background_color: rgb(50, 51, 50)
+
+.sidenav
+    height: 100vh
+    padding-top: 72px
+    position: fixed
+    background-color: $background_color
+
+    img
+        width: 100%
+        margin-bottom: 32px
+
+    h4
+        color: white
+
+    .sidenav-item
+        transition: background-color 0.15s ease-in
+        padding: 16px 0 16px 32px
+        cursor: pointer
+        display: flex
+
+        p
+            color: white
+            transition: color 0.15s ease-in
+            white-space: nowrap
+            font-size: 16px
+
+        i
+            color: white
+            transition: color 0.15s ease-in
+            margin-right: 16px
+            font-size: 18px
+
+        i:hover
+            color: $primary_color
+
+        p:hover
+            color: $primary_color
+
+    .sidenav-item:hover
+        i
+            color: $primary_color
+
+        p
+            color: $primary_color
+
+    .active
+        background-color: $primary_color
+
+        i
+            color: $background_color
+
+        p
+            color: $background_color
+
+    .active:hover
+        i
+            color: $background_color
+
+        p
+            color: $background_color
