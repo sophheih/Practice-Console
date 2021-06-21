@@ -1,6 +1,6 @@
-# Mosson Manage Panel
+# PT Manage Panel
 
-Manage Panel of Mosoon Massage manage system. Build with React.
+Manage Panel of PT manage system. Build with React.
 
 ## Scripts
 
